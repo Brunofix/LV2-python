@@ -36,5 +36,14 @@ plt.figure()
 plt.imshow(preslikana_slika, cmap="gray")
 plt.title("preslikanal")
 
+jedna_cetvrtina_slike = np.zeros((h, w))
+for y in range(h):
+    for x in range(w):
+        if 240 <= x < 480:   #broj dijelova grafa na osi x sa slike
+            jedna_cetvrtina_slike[y, x] = img[y, x]
+plt.figure()
+plt.imshow(jedna_cetvrtina_slike, cmap="gray")
+plt.title("jedna cetvrtina slike") #prikazuje samo drugu cetvrtinu slike koju nam u zadatku trazi i cijelu njenu visinu
+
 
 plt.show()
