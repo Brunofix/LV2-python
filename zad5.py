@@ -6,7 +6,7 @@ def plavo_crvena_slika(square_size, square_amount_h, square_amount_w):
     plava[:, :, 2] = 255
     crvena = np.ones((square_size, square_size, 3)) #returns a new array of given shape and data type, where the element's value is set to 1.
     crvena[:, :, 0] = 255
-    rows = []
+    rows = []  #tu definiramo redove
     for i in range(square_amount_h):
         row = []
         for j in range(square_amount_w):
